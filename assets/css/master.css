@@ -1,0 +1,33 @@
+@font-face {
+  font-family: navbar-font;
+  src: url(../fonts/Luxory.woff)
+}
+body {
+  background: #333;
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  position: absolute;
+  top: 0%;
+  background: #1f1e24;
+  left: 0%;
+  right: 0%;
+  height: 8%;
+  word-spacing: 40px;
+  text-align: center;
+}
+.navbar a {
+  font-family: navbar-font;
+  font-weight: bolder;
+  position: relative;
+  top: 30%;
+  text-decoration: none;
+  font-size: 30px;
+}
+#navbar-item {
+  color: #ffff;
+}
+#navbar-item:hover {
+  color: #ff8000;
+}

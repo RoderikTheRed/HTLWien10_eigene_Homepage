@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Philipp Lageder</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <script type="text/javascript">
+      function send() {
+          alert("Erfolgreich Abgesendet!");
+      }
+    </script>
+    <div class="navbar">
+      <a id="navbar-item" href="#">Home</a>
+      <a id="navbar-item" href="#skills">Skills</a>
+      <a id="navbar-item" href="#contact">Kontakt</a>
+      <a id="navbar-item" href="https://github.com/RoderikTheRed">GitHub</a>
+    </div>
+    <section id="main">
+      <div class="right">
+        <h1 id="about-me">Hallo meine Name ist Philipp Lageder und bin ein fünfzenjähriger Entwickler. Unter dem Namen "RoderikTheRed" programmiere ich in meiner Freizeit gerne in verschiedenen Programmiersprachen <a href="#skills" style="text-decoration: none;">Skills</a> Seit mittlerweile mehr als drei Jahren mache ich außerdem auch Webdevelopment.</h1>
+      </div>
+      <div class="left">
+        <img id="me" src="assets/images/me.png" alt="My Face" width="384" height="384">
+      </div>
+    </section>
+    <section id="skills">
+      <div class="top">
+        <h1>Meine Skills</h1>
+      </div>
+      <div class="skills">
+        <div class="line-1">
+          <img id="skill-1" src="assets/images/csharp.jpg" alt="c#">
+          <img id="skill-2" src="assets/images/c++.png" alt="c+">
+          <img id="skill-3" src="assets/images/css.png" alt="css">
+          <img id="skill-4" src="assets/images/docker.png" alt="docker">
+        </div>
+        <div class="line-2">
+          <img id="skill-5" src="assets/images/git.png" alt="git">
+          <img id="skill-6" src="assets/images/html.png" alt="html">
+          <img id="skill-7" src="assets/images/java.png" alt="java">
+          <img id="skill-8" src="assets/images/javascript.png" alt="javascript">
+        </div>
+        <div class="line-3">
+          <img id="skill-9" src="assets/images/mariadb.png" alt="mariadb">
+          <img id="skill-10" src="assets/images/python.png" alt="python">
+          <img id="skill-11" src="assets/images/php.png" alt="php">
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="top-contact">
+        <h1>Kontakt</h1>
+      </div>
+        <input type="text" name="vorname" placeholder="Vorname">
+        <input type="text" name="nachname" placeholder="Nachname"><br>
+        <input type="email" name="email" placeholder="Email"><br>
+        <textarea name="nachricht" rows="8" cols="80" placeholder="Nachricht"></textarea><br>
+        <button type="submit" name="button" onclick="send()">Absenden</button>
+        <br>
+    </section>
+  </body>
+</html>

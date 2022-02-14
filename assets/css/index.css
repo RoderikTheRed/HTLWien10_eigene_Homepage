@@ -1,0 +1,167 @@
+@font-face {
+    font-family: me-text;
+    src: url(../fonts/GefuhPersonalUse-Regular.woff);
+}
+@font-face {
+  font-family: navbar-font;
+  src: url(../fonts/Luxory.woff)
+}
+#me {
+  border-radius: 100%;
+}
+.right {
+  position: absolute;
+  right: 5%;
+  width: 60%;
+  top: 22%;
+  font-family: me-text;
+  color: white;
+  font-size: 20px;
+}
+#about-me a {
+  color: #fb00ff;
+}
+.left {
+  position: absolute;
+  left: 10%;
+  top: 13%;
+}
+.top {
+  position: absolute;
+  width: 100%;
+  top: 55%;
+  text-align: center;
+}
+.top h1 {
+  font-family: navbar-font;
+  font-size: 40px;
+  color: white;
+}
+.skills img{
+  position: absolute;
+  height: 180px;
+  width: auto;
+}
+.line-1 {
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+}
+#skill-1 {
+  position: absolute;
+  left: 10%;
+}
+#skill-2 {
+  position: absolute;
+  left: 35%;
+}
+#skill-3 {
+  position: absolute;
+  right: 10%;
+}
+#skill-4 {
+  position: absolute;
+  right: 35%;
+}
+.line-2 {
+  position: absolute;
+  top: 100%;
+  text-align: center;
+  width: 100%
+}
+#skill-5 {
+  position: absolute;
+  left: 10%;
+}
+#skill-6 {
+  position: absolute;
+  left: 35%;
+}
+#skill-7 {
+  position: absolute;
+  right: 10%;
+}
+#skill-8 {
+  position: absolute;
+  right: 35%;
+}
+.line-3 {
+  position: absolute;
+  top: 130%;
+  text-align: center;
+  width: 100%
+}
+#skill-9 {
+  position: absolute;
+  left: 10%;
+}
+#skill-10 {
+  position: absolute;
+  left: 35%;
+}
+#skill-11 {
+  position: absolute;
+  right: 35%;
+}
+#contact {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 155%;
+}
+.top-contact {
+  text-align: center;
+}
+.top-contact h1 {
+  font-family: navbar-font;
+  font-size: 40px;
+  color: white;
+}
+#contact input[type="text"] {
+  color: white;
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #14161E;
+  border-radius: 6px;
+  border-color: #ABABAB;
+}
+#contact input[type="email"] {
+  color: white;
+  width: 40.25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #14161E;
+  border-radius: 6px;
+  border-color: #ABABAB;
+}
+#contact textarea {
+  position: relative;
+  color: white;
+  width: 40.25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #14161E;
+  border-radius: 6px;
+  border-color: #ABABAB;
+}
+#contact button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 6px;
+  font-family: me-text;
+  font-size: 25px;
+}
+#contact button:hover {
+  cursor: pointer;
+}
