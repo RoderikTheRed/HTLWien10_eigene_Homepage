@@ -5,13 +5,27 @@
     <title>Philipp Lageder</title>
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/master.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <script type="text/javascript">
-      function send() {
-          console.log(document.getElementsByName("vorname").value)
+      function getUrl() {
+        let url = new URL(window.location.href);
+        let args = new URLSearchParams(url.search);
+        let vorname = args.get("vorname");
+        let nachname = args.get("nachname");
+        let email = args.get("email");
+        let message = args.get("message");
+        if (vorname === null) {
+        } else {
+          var userInput = vorname + " " + nachname + " \n" + email + "\n" + message;
+          var file = new Blob([userInput], { type: "text/plain;charset=utf-8" });
+          saveAs(file, "contact.txt");
+          alert("Danke " + vorname + ", ich werde mich bald bei dir melden!");
+        }
       }
+      getUrl();
     </script>
     <div class="navbar">
       <a id="navbar-item" href="#">Home</a>
@@ -21,7 +35,7 @@
     </div>
     <section id="main">
       <div class="right">
-        <h1 id="about-me">Hallo meine Name ist Philipp Lageder und bin ein fünfzenjähriger Entwickler. Unter dem Namen "RoderikTheRed" programmiere ich in meiner Freizeit gerne in verschiedenen Programmiersprachen <a href="#skills" style="text-decoration: none;">Skills</a> Seit mittlerweile mehr als drei Jahren mache ich außerdem auch Webdevelopment.</h1>
+        <h1 id="about-me">Hallo meine Name ist Philipp Lageder und bin ein fünfzenjähriger Entwickler. Unter dem Namen "RoderikTheRed" programmiere ich in meiner Freizeit gerne in verschiedenen Programmiersprachen <a href="#skills" style="text-decoration: none;">Skills</a> Seit mittlerweile mehr als drei Jahren mache ich außerdem auch Webdevelopment</h1>
       </div>
       <div class="left">
         <img id="me" src="assets/images/me.png" alt="My Face" width="384" height="384">
@@ -55,11 +69,13 @@
       <div class="top-contact">
         <h1>Kontakt</h1>
       </div>
-        <input type="text" name="vorname" placeholder="Vorname">
-        <input type="text" name="nachname" placeholder="Nachname"><br>
-        <input type="email" name="email" placeholder="Email"><br>
-        <textarea name="nachricht" rows="8" cols="80" placeholder="Nachricht"></textarea><br>
-        <button type="submit" name="button" onclick="send()">Absenden</button>
+      <form action="index.html" method="get">
+        <input type="text" name="vorname" placeholder="Vorname" required>
+        <input type="text" name="nachname" placeholder="Nachname" required><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <textarea name="message" rows="8" cols="80" placeholder="Nachricht" required></textarea><br>
+        <button type="submit" name="button">Absenden</button>
+      </form>
         <br>
     </section>
   </body>
